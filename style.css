@@ -22,6 +22,7 @@ body {
   top: 50%;
   transform: translate(-50%, -50%);
   overflow: hidden;
+  box-shadow: 5px 2px 10px -2px #000000;
 }
 
 .gallery__photo {
@@ -35,9 +36,15 @@ body {
 .button {
   width: 40px;
   height: 400px;
-  /* border-radius: 50%; */
   text-align: center;
-  border: 1px solid #5b5b5b;
+  border: 1px solid #cccccc;
+  margin: 10px;
+  color: white;
+  background-color: #07ae6e;
+}
+.button:hover {
+  background-color: #00ff9dda;
+  cursor: pointer;
 }
 .button::after {
   display: block;
@@ -46,13 +53,7 @@ body {
   top: 50%;
   transform: translate(-50%, -50%);
 }
-.button--next {
-  /* transform: translate(-100%, -0%); */
-  background-color: rgb(255, 206, 167);
-}
-.button--previous {
-  background-color: rgb(177, 255, 193);
-}
+
 .button--next::after {
   content: ">";
 }
